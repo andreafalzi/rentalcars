@@ -1,4 +1,4 @@
-import { Footer, Navbar } from '@/components';
+import { Footer, Navbar, ToTopArrow } from '@/components';
 import './globals.css';
 import type { Metadata } from 'next';
 
@@ -13,6 +13,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className='relative'>
         <Navbar />
         {children}
+        <ToTopArrow />
         <Footer />
       </body>
     </html>
